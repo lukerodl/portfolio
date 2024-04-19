@@ -1,0 +1,67 @@
+.navbar {
+    display: flex; /* Usa Flexbox */
+    justify-content: space-between; /* Espaça os elementos igualmente */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    background: #998484;
+    padding: 1em;
+}
+
+/* Estilização do botão de toggle */
+.toggle-button {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-ball {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Classes para os modos dark e light */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .toggle-ball {
+    transform: translateX(25px);
+}
+
+/* Estilização dos Links */
+.navbar-link-home a,
+.navbar-link-about,
+.navbar-link-portfolio {
+    text-decoration: none;
+    color: rgb(82, 82, 107);
+    font-weight: bolder;
+    margin: 0 10px; /* Adiciona margem entre os links */
+}
+
+.nav-btn-contact {
+    height: 3em;
+    width: 8em;
+    border-radius: 1em;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn-contact-text {
+    color: rgb(93, 93, 109);
+    text-align: center;
+    font-weight: bolder;
+}

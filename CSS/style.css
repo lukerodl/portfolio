@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10+Charted&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Londrina+Outline&family=Monofett&family=Nabla&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&family=Erica+One&family=Londrina+Outline&family=Monofett&family=Nabla&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-areas: 
+    "aside section1"
+    "aside section1";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 100vh;
+    margin: 5em;
+}
+
+
+aside {
+    grid-area: aside;
+    background: #89f4bf;
+    border-radius: 3em;
+}
+.aside-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza na direção cruzada (vertical) */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilização da imagem */
+.main-aside-div-quadrado-img {
+    margin-top: 5em;
+    height: 18em;
+    width: 18em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-aside-div-quadrado-h3 {
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    padding-top: 0em; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0; /* Remove qualquer margem inferior */
+}
+
+.main-aside-div-quadrado-p {
+    color: rgb(14, 30, 11);
+    padding-top: 0em; /* Ajuste o valor conforme necessário */
+    margin-bottom: 3em; /* Remove qualquer margem inferior */
+    padding: 0 0 0 1em;
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.3em; /* Tamanho da fonte */
+    font-family: 'Bebas Neue', sans-serif; /* Fonte personalizada */
+}
+
+
+.main-aside-div-quadro-div-about-p {
+    margin: 1em 4em 1em 4em;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 2em;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(12, 52, 6);
+}
+
+.main-aside-div-quadro-div-about-h2 {
+    margin: 1em 1em 0em 1em;
+    border-color: #ffffff;
+    font-size: 3em;
+    font-family: "Erica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(110, 193, 126, 0.808);
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-btn {
+    text-align: center;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border-color: #ffffff;
+    background: transparent;
+    flex-wrap: wrap;
+}
+
+.hire-btn {
+    background-color: #99b489; /* Cor de fundo do botão */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    border-radius: 30px; /* Borda arredondada */
+    margin-top: 3em; /* Espaçamento superior */
+    width: 10em; /* Largura do botão */
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.3em; /* Tamanho da fonte */
+    font-family: 'Bebas Neue', sans-serif; /* Fonte personalizada */
+}
+
+
+/* *************SECTION************* */
+.portfolio-content-h1 {
+    margin: 1em 1em 0em 1em;
+    font-size: 3em;
+    font-family: "Erica One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(110, 193, 126, 0.808);
+}
+
+.portfolio-content-p {
+    margin: 1em 4em 1em 4em;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 2em;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(12, 52, 6);
+}
+
