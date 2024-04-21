@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Londrina+Outline&family=Monofett&family=Nabla&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Rubik+Wet+Paint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;300;400;700;800&family=Erica+One&family=Londrina+Outline&family=Monofett&family=Nabla&family=Rubik+Spray+Paint&family=Rubik+Vinyl&family=Rubik+Wet+Paint&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 
 body {
@@ -13,7 +14,7 @@ body {
     display: grid;
     grid-template-areas: 
     "aside section1"
-    "aside section1";
+    "footer footer";
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     min-height: 100vh;
@@ -26,6 +27,11 @@ aside {
     background: #89f4bf;
     border-radius: 3em;
 }
+
+.dark-mode .aside{
+    background: #111529;}
+
+
 .aside-content {
     display: flex;
     flex-direction: column;
@@ -87,6 +93,11 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    opacity: 1;
+}
+
+.social-buttons:opacity {
+    opacity: 0.5;
 }
 
 .social-btn {
@@ -97,6 +108,14 @@ aside {
     border-color: #ffffff;
     background: transparent;
     flex-wrap: wrap;
+    opacity: 1;
+}
+
+.dark-mode .social-btn{
+    color: #ffffff;}
+
+.social-btn:hover {
+    opacity: 0.5;
 }
 
 .hire-btn {
@@ -108,6 +127,15 @@ aside {
     text-align: center; /* Centraliza o texto */
     font-size: 1.3em; /* Tamanho da fonte */
     font-family: 'Bebas Neue', sans-serif; /* Fonte personalizada */
+    opacity: 1;
+}
+
+.dark-mode .hire-btn{
+    color: #ffffff;
+    background: #695b5b;}
+
+.hire-btn:hover {
+    opacity: 0.5;
 }
 
 
@@ -121,6 +149,9 @@ aside {
     color: rgba(110, 193, 126, 0.808);
 }
 
+.dark-mode .portfolio-content-h1{
+    color: #adb0c0;}
+
 .portfolio-content-p {
     margin: 1em 4em 1em 4em;
     font-size: 1em;
@@ -130,5 +161,70 @@ aside {
     font-optical-sizing: auto;
     font-style: normal;
     color: rgb(12, 52, 6);
+}
+
+.dark-mode .portfolio-content-p{
+    color: #ffffff;}
+
+/* Classes para os modos dark e light */
+.dark-mode p{
+    color: #fff;
+}
+
+.portfolio-experiencia {
+    display: grid;
+    grid-template-areas: 
+    "experiencia1 experiencia2 experiencia3"
+    "experiencia4 experiencia5 experiencia6";
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5em;
+    margin: 1em;
+}
+
+.experiencia1, .experiencia2, .experiencia3, .experiencia4, .experiencia5, .experiencia6, .experiencia7, .experiencia8, .experiencia9 {
+    height: 10em;
+    width: 15em;
+    background: #ca9569;
+    text-align: center;
+    align-content: center;
+    border-radius: 1em;
+    opacity: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Classes para os modos dark e light */
+.dark-mode .experiencia1{
+background: #111529;}
+.dark-mode .experiencia2{
+    background: #111529;}
+.dark-mode .experiencia2{
+    background: #111529;}
+.dark-mode .experiencia3{
+    background: #111529;}
+.dark-mode .experiencia4{
+    background: #111529;}
+.dark-mode .experiencia5{
+    background: #111529;}
+.dark-mode .experiencia6{
+     background: #111529;}
+.dark-mode .experiencia7{
+    background: #111529;}
+.dark-mode .experiencia8{
+    background: #111529;}
+.dark-mode .experiencia9{
+    background: #111529;}
+
+.experiencia1:hover, .experiencia2:hover, .experiencia3:hover, .experiencia4:hover, .experiencia5:hover, .experiencia6:hover, .experiencia7:hover, .experiencia8:hover, .experiencia9:hover {
+    opacity: 0.5; 
+}
+
+.portfolio-experiencia-p {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: rgb(57, 101, 50);
 }
 
