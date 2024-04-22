@@ -16,7 +16,7 @@ body {
     "aside section1"
     "footer footer";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     min-height: 100vh;
     margin: 5em;
 }
