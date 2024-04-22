@@ -41,7 +41,7 @@ aside {
 
 /* Estilização da imagem */
 .main-aside-div-quadrado-img {
-    margin-top: 5em;
+    padding: 2em 1em 2em 1em;
     height: 18em;
     width: 18em;
     border-radius: 50%;
@@ -179,7 +179,13 @@ aside {
     justify-content: center;
     align-items: center;
     grid-gap: 5em;
-    margin: 1em;
+    margin: 2em;
+    padding-top: 3em;
+}
+
+.img-movie-city {
+    height: 9em;
+    width: 14em;
 }
 
 .experiencia1, .experiencia2, .experiencia3, .experiencia4, .experiencia5, .experiencia6, .experiencia7, .experiencia8, .experiencia9 {
@@ -193,6 +199,12 @@ aside {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+
+.experiencia1:hover, .experiencia2:hover, .experiencia3:hover, .experiencia4:hover, .experiencia5:hover, .experiencia6:hover, .experiencia7:hover, .experiencia8:hover, .experiencia9:hover {
+    opacity: 0.5; 
+}
+
+
 
 /* Classes para os modos dark e light */
 .dark-mode .experiencia1{
@@ -216,10 +228,6 @@ background: #111529;}
 .dark-mode .experiencia9{
     background: #111529;}
 
-.experiencia1:hover, .experiencia2:hover, .experiencia3:hover, .experiencia4:hover, .experiencia5:hover, .experiencia6:hover, .experiencia7:hover, .experiencia8:hover, .experiencia9:hover {
-    opacity: 0.5; 
-}
-
 .portfolio-experiencia-p {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -227,4 +235,3 @@ background: #111529;}
     font-style: normal;
     color: rgb(57, 101, 50);
 }
-

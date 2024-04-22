@@ -20,6 +20,8 @@
     border-radius: 25px;
     position: relative;
     cursor: pointer;
+    margin-left: 5em;
+    margin-top: 1em;
 }
 
 .toggle-ball {
